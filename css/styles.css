@@ -61,6 +61,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.site-nav .contact {
+  color: var(--primary-text-color)
+}
+
 .site-nav .link.current {
   color: var(--accent-color);
   text-decoration: none;
@@ -162,16 +166,21 @@ body {
   color: var(--primary-bgc);
 }
 
-.contacts .address {
-  color: var(--primary-bgc);
+.contacts .address,
+.contacts .link {
   text-decoration: none;
   font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contacts .address {
+  color: var(--primary-bgc);
 }
 
 .contacts .link {
   color: var(--footer-contacts-color);
-  text-decoration: none;
-  font-style: normal;
 }
 
 .contacts .link:hover,
@@ -187,6 +196,11 @@ body {
   background-color: var(--button-bgc);
   font-family: inherit;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   }
 
 .button.primary {
@@ -203,7 +217,8 @@ body {
 
 
 .button:hover,
-.button:focus {
+.button:focus,
+.button:active {
   color: var(--primary-bgc);
   background-color: var(--accent-color);
 }
@@ -219,7 +234,7 @@ body {
 }  
 
 .project .text{
-
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
 }
